@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="com.example.codetribestudent.tourgroblersdal.AboutGroblesdal">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@android:color/darker_gray"
+        android:weightSum="1">
+
+
+        <ImageView
+            android:id="@+id/streetlights"
+            android:layout_width="match_parent"
+            android:layout_height="164dp"
+            android:src="@drawable/streetlights"
+            android:scaleType="fitXY"
+            android:layout_weight="1.19" />
+        <LinearLayout
+            android:layout_width="421dp"
+            android:layout_height="153dp"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:background="@android:color/darker_gray"
+            android:layout_weight="0.19">
+
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/headerLinearLay">
+
+            <ImageView
+                android:id="@+id/todo"
+                android:layout_width="190dp"
+                android:layout_height="140dp"
+                android:onClick="todo"
+                android:paddingTop="10dp"
+                android:paddingLeft="25dp"
+                android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/usernameTextView"
+                    android:text="To Do"
+                    android:textSize="15sp"
+                    android:paddingLeft="4dp"
+                    android:textColor="@android:color/black"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/entertainment"
+                    android:layout_width="match_parent"
+                    android:layout_height="141dp"
+                    android:onClick="entertainment"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp"
+                    android:scaleType="fitXY"/>
+
+                <TextView
+                    android:text="Entertainment"
+                    android:textSize="15sp"
+                    android:paddingLeft="4dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="17dp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="181dp"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:background="@android:color/darker_gray"
+            android:layout_weight="0.69">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/attractions"
+                android:layout_width="191dp"
+                android:layout_height="159dp"
+                android:onClick="attractions"
+                android:paddingBottom="40dp"
+                android:paddingLeft="25dp"
+                android:scaleType="fitXY" />
+
+                <TextView
+                    android:text="Attractions"
+                    android:textSize="15sp"
+                    android:paddingLeft="4dp"
+                    android:textColor="@android:color/white"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="17dp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/Accomodation"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:onClick="accomodation"
+                android:paddingBottom="40dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:scaleType="fitXY" />
+
+                <TextView
+                    android:text="Accomodation"
+                    android:textSize="15sp"
+                     android:textColor="@android:color/black"
+                    android:paddingLeft="4dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="17dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

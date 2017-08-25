@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.codetribestudent.tourgroblersdal">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/groblersdalmall"
+        android:label="Welcome"
+        android:roundIcon="@drawable/lionguests"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="AboutGroblesdal" />
+        <activity android:name="Attractions" />
+        <activity android:name="Results" />
+        <activity android:name="Accomodation" />
+        <activity android:name="ToDo" />
+        <activity android:name="Entertainment"></activity>
+    </application>
+
+</manifest>

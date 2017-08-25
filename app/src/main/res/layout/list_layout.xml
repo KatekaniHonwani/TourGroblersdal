@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="25dp"
+        android:padding="10dp"
+        android:scaleType="fitXY"
+        android:layout_weight="0.02"
+        app:srcCompat="@drawable/leselobontshi"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.02"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:text="Name"
+        android:textSize="17dp"
+        android:textAllCaps="true"
+        android:layout_toEndOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/txtTeam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:layout_toEndOf="@+id/imageView2"
+        android:layout_below="@id/txtName"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="italic"
+        android:text="Team" />
+
+
+</RelativeLayout>
